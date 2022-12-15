@@ -164,13 +164,11 @@ p{
     .h_container{
     padding: 30px;
     position:relative;
-    height: 100%;
-    width: 100%;
 }
     .h_left{
-        display: none;
-        position: absolute;
+        position:fixed;
         width: 100%;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.3);
         z-index: 1;
         top: 0;
@@ -261,6 +259,25 @@ p{
 }
 .top{
     margin-top: 0.2em;
+}
+.products{
+    padding: 1.7em 1.5em;
+    flex-direction: column;
+    justify-content: center;
+}
+.product_wrapper{
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.product_img > img{
+    width: 90%;
+}
+.product_desc > h3{
+    font-size: 1.7em;
+}
+.product_sub{
+    line-height: 1em;
+    overflow: hidden;
 }
 
 }
