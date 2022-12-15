@@ -226,10 +226,41 @@ p{
 }
 .main, .aside{
     width: 100%;
+    margin-left: 0;
 }
 .s_main_head, .s_main_desc{
     width: 100%;
     margin-bottom: 0.5em;
+}
+.s_main_head > h1{
+    font-size: 2em;
+}
+.s_main_desc > p{
+    width: 100%;
+    line-height: 1.2em;
+    margin-bottom: 0.2em;
+}
+.s_main_desc > a{
+    width: 60%;
+    margin-bottom: 40px;
+}
+.aside_wrapper{
+    padding: 1em;
+}
+.aside_wrapper > h1{
+    margin-bottom: 1.5em;
+}
+.aside_desc > h3{
+    margin-bottom: 0.2em;
+}
+.aside_desc > p{
+    margin-bottom: 0.2em;
+}
+.line{
+    margin-top: 1em;
+}
+.top{
+    margin-top: 0.2em;
 }
 
 }
