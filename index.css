@@ -6,6 +6,9 @@
     font-family: Inter;
     
 }
+.icon_menu{
+    display: none;
+}
 p{
     font-size: 15px;
     font-weight: 400;
@@ -34,6 +37,9 @@ p{
 }
 .main{
     width: 70%;
+}
+.mobile{
+    display: none;
 }
 .main > img{
     width: 100%;
@@ -152,4 +158,78 @@ p{
 .product_sub{
     color:hsl(236, 13%, 42%);
     line-height: 1.5em;
+}
+@media screen and (max-width: 325px)
+{
+    .h_container{
+    padding: 30px;
+    position:relative;
+    height: 100%;
+    width: 100%;
+}
+    .h_left{
+        display: none;
+        position: absolute;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+        top: 0;
+        bottom: 0;
+        left: 0;    
+    }
+    .icon_menu{
+        display:block;   
+    }
+    .open_icon{
+        margin-top: -40px;
+        cursor: pointer;
+    }
+    .close_icon{
+        margin-left: -40px;
+        cursor: pointer;
+        display: none;
+    }
+    .h_left > nav{
+    background-color: hsl(36, 100%, 99%);
+    margin-left: 30%;
+    height: 100vh;
+    
+    }
+    .h_left > nav ul{
+        margin-top: 5em;
+    }
+.h_left > nav ul li{
+    display: block;
+    margin-right: 20px;
+}
+.h_left > nav ul li a{
+    text-decoration: none;
+    color: hsl(236, 13%, 42%);
+    font-family: Inter, 'Arial Narrow Bold', sans-serif;
+    font-weight: 400;
+}
+.s_container{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+}
+.s_main_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mobile{
+    display: block;
+}
+.desktop{
+    display: none;
+}
+.main, .aside{
+    width: 100%;
+}
+.s_main_head, .s_main_desc{
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
 }
